@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+header {
+    font-family: "Cormorant SC", serif;
+}
+
+header hr{
+    width: 90%;
+    margin:  0 auto;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.logo{
+    width: 120px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    padding-right: 100px;
+}
+
+.navegacion{
+    padding-right: 100px;
+}
