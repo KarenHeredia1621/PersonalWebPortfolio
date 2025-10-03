@@ -191,5 +191,90 @@ body {
     color: #fcdfe1;
 }
 
+#skills {
+    background-color: #fff;
+    color: #000;
+    font-family: "Cormorant SC", serif;
+    padding: 60px 20px;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skills-description {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.skill-label {
+    font-weight: bold;
+    font-family: "Cormorant SC", serif;
+}
+
+.skill-percent {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 0.9rem;
+    color: #000000;
+    font-weight: 700;        
+
+}
+
+.col-md-6.text-center {
+    padding-top: 40px;
+}
+
+.progress {
+    height: 6px;
+    border-radius: 4px;
+    background-color: #f9e0e3;
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+.bg-custom {
+    background-color: #9C6E71 !important;
+}
+
+.experience-box {
+    font-family: "Cormorant SC", serif;
+    color: #9C6E71;
+}
+
+.experience-number {
+    font-size: 3rem;         /* más grande */
+    font-weight: 750;        /* extra negrilla */
+    margin-bottom: 0;
+    transition: transform 0.3s ease;
+    font-family: "Cormorant SC", serif;
+    color: #9C6E71;
+}
+
+.experience-number:hover {
+    transform: scale(1.1);
+}
+
+.experience-label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    font-family: "Cormorant SC", serif;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
 
 
