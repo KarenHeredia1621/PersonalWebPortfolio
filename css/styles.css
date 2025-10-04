@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
-/* -------- HEADER -------- */
 header {
     font-family: "Cormorant SC", serif;
 }
@@ -20,6 +19,7 @@ header hr {
     margin-left: auto;
     padding-right: 100px;
 }
+
 .nav-link{
     text-decoration: none;
 }
@@ -38,7 +38,6 @@ body {
     font-family: "Cormorant SC", serif;
 }
 
-/* HERO */
 #hero {
     display: flex;
     align-items: center;
@@ -196,6 +195,8 @@ body {
     color: #000;
     font-family: "Cormorant SC", serif;
     padding: 60px 20px;
+    font-weight: bold;
+
 }
 
 .skills-title {
@@ -248,8 +249,8 @@ body {
 }
 
 .experience-number {
-    font-size: 3rem;         /* más grande */
-    font-weight: 750;        /* extra negrilla */
+    font-size: 3rem;      
+    font-weight: 750;        
     margin-bottom: 0;
     transition: transform 0.3s ease;
     font-family: "Cormorant SC", serif;
@@ -269,6 +270,181 @@ body {
     font-family: "Cormorant SC", serif;
     margin-top: 0.5rem;
 }
+
+#experience-education {
+    background-color: #f9e0e3d2;
+    color: #000;
+    font-family: "Cormorant SC", serif;
+    padding: 60px 0 120px 0; 
+    border-top: 1px solid #e5c0c3;
+    position: relative;
+}
+
+.section-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #151313;
+    letter-spacing: 2px;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.section-subtitle {
+    font-family: "Cormorant SC", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3c3b3b;
+    margin-bottom: 0.3rem;
+}
+
+.section-description {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 0.95rem;
+    color: #151313;
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+.section-heading {
+    font-size: 1.4rem;
+    color: #424242;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.section-divider {
+    width: 140px;
+    height: 1px;
+    background-color: #3d3d3db7;
+    margin: -1rem 0 1rem 0;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.section-heading:hover + .section-divider {
+    width: 80px;
+}
+
+.timeline {
+    list-style: none;       
+    margin: 0;
+    padding-left: 1.5rem;    
+    border-left: 2px solid #9C6E71;
+    position: relative;
+}
+
+.timeline li {
+    position: relative;     
+    margin-bottom: 25px;
+    padding-left: 0;   
+}
+
+.timeline li::before {
+    content: none;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: #3c3b3b;
+    font-family: 'Cutive Mono', monospace;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.work-role,
+.work-company {
+    margin: 0;
+    line-height: 1.2; 
+    display: block;
+}
+
+.edu-type,
+.edu-school {
+    margin: 0;
+    line-height: 1.2; 
+    display: block;   
+}
+
+.edu-school,
+.work-company {
+    position: relative;
+    display: block;
+    margin: 0;
+    line-height: 1.2;
+    color: #9C6E71;
+}
+
+.edu-school::before,
+.work-company::before {
+    content: "";
+    position: absolute;
+    left: -18px;       
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: #9C6E71;
+    border-radius: 50%;
+}
+
+.hobbies-box {
+    background-color: #94686a;
+    color: #fff;
+    padding: 30px;
+    border-radius: 3px;
+    width: 42%;
+    position: absolute;
+    right: 40px;
+    bottom: -45px; 
+    z-index: 10;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.hobbies-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hobbies-box .section-divider {
+    background-color: #fff;
+}
+
+.hobby-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 0.8rem 2rem; 
+    list-style: none;
+    padding: 0;
+}
+
+.hobby-list li {
+    position: relative;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.1rem; 
+    padding-left: 20px;
+    color: #fff;
+    word-break: break-word; 
+}
+
+.hobby-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65em; 
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
 
 
 
