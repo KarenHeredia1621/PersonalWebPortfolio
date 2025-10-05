@@ -690,6 +690,108 @@ img, iframe{
 
 
 
+/* TABLET / IPAD (1024px - 1366px) */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+
+body, html {
+    overflow-x: hidden; 
+}
+
+.navbar-nav {
+    padding-right: 0%;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin: 0;
+    padding: 0;
+    min-height: auto;
+}
+
+#hero-image {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+#hero-image img {
+    max-width: 350px;  
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#hero-title {
+    font-size: 50px;
+}
+
+.lead {
+    font-size: 1.05rem;
+}
+
+.about-title {
+    font-size: 2rem;
+}
+
+.about-btn {
+    padding: 5px 10px;
+}
+
+.about-img-wrapper img {
+    left: 85px;
+}
+
+.line-4 {
+    right: 230px;
+    width: 260px;
+    height: 220px;
+}
+
+.contact-title {
+    font-size: 1.8rem;
+}
+
+.gap-5 {
+    gap: 1rem !important;
+}
+
+.section-subtitle {
+    font-size: 1.7rem;
+}
+
+.hobbies-box {
+    padding: 20px;
+    width: 40%;
+    bottom: -95px;
+    right: 30px;
+}
+
+#portfolio .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.projects-wrapper {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+#main-footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+}
 
 
 
