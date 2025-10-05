@@ -795,8 +795,193 @@ body, html {
 
 
 
+/* SMARTPHONE / MOBILE (430px - 932px) */
+@media screen and (min-width: 430px) and (max-width: 932px) {
+
+body, html {
+    overflow-x: hidden;
+}
+
+.navegacion {
+    padding-right: 30px;
+}
+
+.navbar-nav {
+    display: flex;          
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: flex-end;  
+    padding-right: 1rem;   
+}
+
+.nav-item {
+    margin: 0.1rem 0; 
+}
+
+#hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero-image img {
+    max-width: 200px;
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    margin-bottom: -40px;
+}
+
+#hero-title {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+#hero-description h2, #hero-description p {
+    text-align: left;
+    font-size: 15px;
+
+}
+  
+#hero-info {
+    padding: 40px;
+}
+  
+.lead {
+    font-size: 1rem;
+}
+
+.about-title {
+    font-size: 1.6rem;
+}
+
+.about-btn {
+    padding: 5px 10px;
+    font-size: small;
+}
+
+.about-img-wrapper img {
+   display: none;
+}
+
+.line-1, .line-2, .line-3, .line-4 {
+    display: none; 
+}
+
+.contact-title {
+    font-size: 1.3rem;
+}
+
+.gap-5 {
+    gap: 1rem !important;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 1px; 
+}
+
+.contact-icons a {
+    font-size: 2rem; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+    color: #fcdfe1;
+}
+
+.skills-title {
+    font-size: 1.8rem;
+}
+
+.col-md-6.text-center {
+    padding-top: 10px;
+}
+
+.experience-number {
+    font-size: 2.5rem;
+}
+
+.experience-label {
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-size: 0.8rem;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+}
+
+.section-description {
+    font-size: 0.85rem;
+}
+
+.section-heading {
+    font-size: 1.2rem;
+}
+
+.hobby-list .hobby-3,
+.hobby-list .hobby-4,
+.hobby-list .hobby-5,
+.hobby-list .hobby-6,
+.hobby-list .hobby-7,
+.hobby-list .hobby-9{
+    display: none;
+}
+
+.hobbies-box h3 {
+    font-size: 1.2rem;
+}
+
+.hobbies-box {
+    width: 45%;
+    right: 10px;
+    bottom: 118px;
+    padding: 10px;
+}
+  /* PORTFOLIO */
+
+ #portfolio .display-5 {
+    font-size: 2rem;
+  }
+
+.subtitle-line h2 {
+    font-size: 1rem;
+}
+
+#portfolio .portfolio-grid {
+
+    padding-bottom: 1rem;
+}
+
+.projects-wrapper {
+    padding: 0;
+    margin: 0 ;
+}
+
+#loadMoreBtn {
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+
+    
+}
+
+  /* FOOTER */
+  #main-footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 
+}
 
 
 
