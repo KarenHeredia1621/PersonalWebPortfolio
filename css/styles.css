@@ -554,6 +554,7 @@ img, iframe{
     color: #222;
     background: transparent;
     transition: background .18s ease, color .18s ease, transform .12s ease;
+    margin-bottom: 3rem;
 }
 
 #loadMoreBtn:hover{ 
@@ -568,6 +569,125 @@ img, iframe{
     border-radius: 6px;
     background: #fff;
 }
+
+#main-footer {
+  background: #000;
+  color: #fff;
+  font-family: 'Cutive Mono', monospace;
+  padding: 18px 0;
+  border-top: 0;
+  padding: 2.5rem 0;
+}
+
+#main-footer .footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 16px;
+  flex-wrap: nowrap;
+}
+
+#main-footer .footer-col { flex: 1 1 0; min-width: 140px; }
+
+#main-footer .footer-left {
+  text-align: left;
+}
+#main-footer .footer-left p {
+  margin: 0;
+  color: #ffffff;
+  opacity: .9;
+  font-size: .92rem;
+  line-height: 1;
+  letter-spacing: .02em;
+}
+
+#main-footer .footer-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+}
+#main-footer .footer-logo {
+  width: 72px;                
+  height: auto;
+  display: block;
+  object-fit: contain;
+  -webkit-user-drag: none;
+  user-select: none;
+  filter: none;  
+}
+
+#main-footer .footer-text,
+#main-footer .footer-lang {
+  color: #fff;
+  opacity: .92;
+  font-size: .88rem;
+  letter-spacing: .06em;
+  display: inline-flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+#main-footer .footer-right {
+  text-align: right;
+}
+
+#main-footer .social-links {
+  display: flex;
+  gap: .6rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main-footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #fff;
+  background: transparent;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background .14s ease, transform .12s ease;
+  opacity: .95;
+}
+
+#main-footer .social-links a:hover,
+#main-footer .social-links a:focus {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+#main-footer .social-links .bi,
+#main-footer .social-links svg,
+#main-footer .social-links img.icon {
+  color: #fff;
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
+
+#main-footer .footer-center .footer-logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+#main-footer,
+#main-footer * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#main-footer .footer-logo.force-white {
+  filter: invert(1) brightness(2);
+}
+
 
 
 
