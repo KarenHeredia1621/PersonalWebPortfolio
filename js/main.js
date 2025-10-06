@@ -1,11 +1,12 @@
+  AOS.init();
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".progress-bar").forEach(bar => {
-    const finalWidth = bar.style.width;
+    const finalWidth = bar.getAttribute("data-width") + "%";
     bar.style.width = "0";
-    bar.style.transition = "width 1s ease-in-out";
+    bar.style.transition = "width 1.3s ease-in-out";
     setTimeout(() => {
       bar.style.width = finalWidth;
-    }, 100);
+    }, 300);
   });
 
   const counters = document.querySelectorAll(".experience-number");
@@ -119,14 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Seleccionamos todos los proyectos y el botón
 const projects = document.querySelectorAll('.portfolio-card');
 const loadMoreBtn = document.getElementById('loadMoreBtn');
 
-// Número de proyectos a mostrar inicialmente
 const initialCount = 3;
 
-// Función para mostrar los primeros 'initialCount' proyectos
 function showInitialProjects() {
     projects.forEach((project, index) => {
         project.style.display = index < initialCount ? 'block' : 'none';
@@ -134,19 +132,15 @@ function showInitialProjects() {
     loadMoreBtn.textContent = 'Load More';
 }
 
-// Función para mostrar todos los proyectos
 function showAllProjects() {
     projects.forEach(project => project.style.display = 'block');
     loadMoreBtn.textContent = 'Load Less';
 }
 
-// Estado actual del botón (false = mostrar pocos, true = mostrar todos)
 let showingAll = false;
 
-// Inicializamos al cargar la página
 showInitialProjects();
 
-// Evento al hacer clic en el botón
 loadMoreBtn.addEventListener('click', () => {
     if(showingAll) {
         showInitialProjects();
@@ -155,3 +149,5 @@ loadMoreBtn.addEventListener('click', () => {
     }
     showingAll = !showingAll;
 });
+
+
